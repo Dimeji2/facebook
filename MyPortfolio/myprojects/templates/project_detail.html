@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1>{{project.title}}</h1>
+<div class='row'>
+	<div class='col-mod-8'></div>
+	<div class='col-md-4'>
+		<h5>About my project</h5>
+		<p>{{project.description}}</p>
+		<h5>Technology used:</h5>
+		<p>{{project.technology}}</p>
+	</div>
+</div>
+{% endblock %}
